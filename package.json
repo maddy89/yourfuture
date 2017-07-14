@@ -1,0 +1,23 @@
+{
+  "name": "yourfuture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:madhawa-bandara/yourfuture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "bugs": {
+  },
+  "homepage": "",
+  "dependencies": {
+   
+  }
+}
