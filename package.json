@@ -1,7 +1,7 @@
 {
   "name": "yourfuture",
   "version": "1.0.0",
-  "description": "",
+  "description": "Yourfuture is a search engine and a knowledge base for education and career in Sri Lanka",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:madhawa-bandara/yourfuture.git"
+    "url": "git+ssh://git@github.com/madhawa-bandara/yourfuture.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "",
-  "bugs": {
-  },
-  "homepage": "",
+  "author": "SL2c Technology Team",
+  "license": "ISC",
+  "homepage": "https://github.com/madhawa-bandara/yourfuture#readme",
   "dependencies": {
-   
+    "express": "^4.15.3"
+  },
+  "bugs": {
+    "url": "https://github.com/madhawa-bandara/yourfuture/issues"
   }
 }
