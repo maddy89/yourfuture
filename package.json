@@ -16,7 +16,12 @@
   "license": "ISC",
   "homepage": "https://github.com/madhawa-bandara/yourfuture#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "method-override": "^2.3.9",
+    "mongodb": "^2.2.31",
+    "querystring": "^0.2.0",
+    "request": "^2.81.0"
   },
   "bugs": {
     "url": "https://github.com/madhawa-bandara/yourfuture/issues"
