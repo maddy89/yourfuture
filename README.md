@@ -10,3 +10,5 @@ Steps to run the example GET method
 
 1 - Run node index.js
 2 - Go to your browser and run localhost:3000/example?name=${yourName}
+
+Important - When adding new Node JS Modules, please use --save flag with install command.
