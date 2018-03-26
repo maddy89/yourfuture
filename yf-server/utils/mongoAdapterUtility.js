@@ -6,14 +6,15 @@
 var config = require('../config/config');
 
 var mongoClient = require('mongodb').MongoClient;
-var dbClient, retryCount;
+var dbClient;
+var retryCount = 0;
 
 exports.openConnection = function () {
     mongoClient.connect(config.mongodb.connectionString, function (err, mongoDbClient) {
         if (err) {
             console.log('Cannot connect to YourFuture Mongo DB Instance! Retrying');
             retryCount++;
-            if (retryCount <= 20) {
+            if (retryCount <= 10) {
                 setTimeout(function () {
                     exports.openConnection();
                 }, 5000);
