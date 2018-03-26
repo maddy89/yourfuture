@@ -27,6 +27,8 @@ app.use(function (req, res, next) {
     next();
 });
 
+mongoAdapterUtility.openConnection();
+
 app.get('/', function (req, res) {
   res.send('Hello World!')
 });
@@ -41,6 +43,35 @@ app.put('/example',
         res.end();
 });
 app.delete('/example',
+    function (req, res) {
+        res.writeHead(404, {'Content-Type': 'application/json'});
+        var result = JSON.stringify({response: false, responseCode: 404, responseMessage: 'Resource is undefined or unavailable'});
+        res.write(result);
+        res.end();
+});
+
+app.get('/course', 
+    function (req, res) {
+        res.writeHead(404, {'Content-Type': 'application/json'});
+        var result = JSON.stringify({response: false, responseCode: 404, responseMessage: 'Resource is undefined or unavailable'});
+        res.write(result);
+        res.end();
+});
+app.post('/course',
+    function (req, res) {
+        res.writeHead(404, {'Content-Type': 'application/json'});
+        var result = JSON.stringify({response: false, responseCode: 404, responseMessage: 'Resource is undefined or unavailable'});
+        res.write(result);
+        res.end();
+});
+app.put('/course',
+    function (req, res) {
+        res.writeHead(404, {'Content-Type': 'application/json'});
+        var result = JSON.stringify({response: false, responseCode: 404, responseMessage: 'Resource is undefined or unavailable'});
+        res.write(result);
+        res.end();
+});
+app.delete('/course',
     function (req, res) {
         res.writeHead(404, {'Content-Type': 'application/json'});
         var result = JSON.stringify({response: false, responseCode: 404, responseMessage: 'Resource is undefined or unavailable'});
